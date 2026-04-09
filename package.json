@@ -2,9 +2,36 @@
   "name": "sk2-cli",
   "version": "1.0.0",
   "description": "CLI tool for managing AI Agent Skills from GitHub repositories with sk2",
+  "keywords": [
+    "cli",
+    "agent",
+    "skill",
+    "cursor",
+    "codex",
+    "github"
+  ],
+  "homepage": "https://github.com/yq612/skill-hub-cli#readme",
+  "bugs": {
+    "url": "https://github.com/yq612/skill-hub-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yq612/skill-hub-cli.git"
+  },
+  "license": "MIT",
+  "author": "youquan",
   "type": "module",
   "bin": {
     "sk2": "./bin/skill.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prepublishOnly": "node ./bin/skill.js --help"
   },
   "dependencies": {
     "@inquirer/prompts": "^7.10.1",

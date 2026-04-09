@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
+import { createRequire } from 'node:module';
 import { repoAdd } from '../src/commands/repo-add.js';
 import { repoRemove } from '../src/commands/repo-remove.js';
 import { repoList } from '../src/commands/repo-list.js';
@@ -9,12 +10,14 @@ import { skillInfo } from '../src/commands/skill-info.js';
 import { skillAdd } from '../src/commands/skill-add.js';
 import { skillUpdate } from '../src/commands/skill-update.js';
 
+const require = createRequire(import.meta.url);
+const { version } = require('../package.json');
 const program = new Command();
 
 program
   .name('sk2')
   .description('CLI tool for managing AI Agent Skills from GitHub repositories')
-  .version('1.0.0');
+  .version(version);
 
 const repo = program.command('repo').description('管理 GitHub 仓库');
 
