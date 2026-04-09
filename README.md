@@ -9,7 +9,13 @@
 ### 通过 npm 全局安装（推荐）
 
 ```bash
-npm install -g sk2-cli
+npm i -g @yq612/sk2-cli
+```
+
+也可本地安装到项目：
+
+```bash
+npm i @yq612/sk2-cli
 ```
 
 安装后可直接执行：
