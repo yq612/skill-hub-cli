@@ -1,6 +1,6 @@
 {
   "name": "@yq612/sk2-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool for managing AI Agent Skills from GitHub repositories with sk2",
   "keywords": [
     "cli",
