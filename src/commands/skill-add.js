@@ -17,6 +17,7 @@ const ENVIRONMENTS = [
   { name: '.claude/skills', value: '.claude/skills' },
   { name: '.codex/skills', value: '.codex/skills' },
   { name: '.cursor/skills', value: '.cursor/skills' },
+  { name: './ (当前目录)', value: '.' },
 ];
 
 export async function skillAdd(options) {
